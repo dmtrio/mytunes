@@ -21,3 +21,48 @@ var songData = [
     artist: 'Aaliyah',
   }
 ];
+// var fetchAJAX;
+// $.ajax({
+//   // This is the url you should use to communicate with the parse API server.
+//   url: 'http://parse.atx.hackreactor.com/mytunes/classes/songs',
+//   type: 'GET',
+//   contentType: 'application/json',
+//   // data: data,
+//   success: function (data) {
+//     console.log('Fetched music', data['results']);
+//     songData = [];
+//     for (var song of data['results']) {
+//       songData.push(song);
+//     }
+//   },
+//   error: function () {
+//     // See: https://developer.mozilla.org/en-US/docs/Web/API/console.error
+//     console.error('Failed to get music');
+//   }
+// });
+// // setTimeout(function(){console.log(fetchAJAX)},2000);
+// Backbone.ajax({
+//   url: 'http://parse.atx.hackreactor.com/mytunes/classes/songs',
+//   type: 'GET',
+//   contentType: 'application/json',
+//   // data: data,
+//   success: function (data) {
+//     console.log('Fetched music', data['results']);
+//     songData = [];
+//     for (var song of data['results']) {
+//       songData.push(song);
+//     }
+//   },
+//   error: function () {
+//     // See: https://developer.mozilla.org/en-US/docs/Web/API/console.error
+//     console.error('Failed to get music');
+//   }
+
+//     dataType: "jsonp",
+//     url: "https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=twitterapi&count=25",
+//     data: "",
+//     success: function(val){
+//         collection.add(val);  //or reset
+//         console.log(collection);
+//     }
+// });
