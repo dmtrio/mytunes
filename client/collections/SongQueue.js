@@ -9,13 +9,13 @@ var SongQueue = Backbone.Collection.extend({
       if (context.length === 1 ) {
         context.playFirst();
       }
-    }, this);
+    });
     context.on('ended', function() {
       context.shift();
       if (context.length >= 1) {
         context.playFirst();
       }
-    }, this);
+    });
     context.on('dequeue', function() {
       context.remove(context.where(this));
     }, this);
@@ -23,5 +23,6 @@ var SongQueue = Backbone.Collection.extend({
 
   playFirst: function() {
     this.at(0).play();
+    // this.set('currentSong', this.at(0));
   },
 });

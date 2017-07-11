@@ -3,6 +3,10 @@ var SongQueueView = Backbone.View.extend({
 
   initialize: function() {
     this.render();
+    setInterval(function(){this.render()}.bind(this), 1000);
+    // this.on('change', function() {
+    //   this.render();
+    // }, this);
   },
 
   render: function() {
